@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="id" data-type="software" data-radius="round" data-buttons="solid" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pertanyaan Interview Magang &amp; Cara Jawabnya | Skilqu</title>
+<meta name="description" content="Kuasai Teknik STAR dalam 15 menit. Ambil gratis video + cheat sheet 10 pertanyaan interview magang yang paling sering keluar, langsung ke email.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cheat sheet interview magang gratis dari Skilqu">
+<meta property="og:description" content="Video 15 menit Teknik STAR + cheat sheet 10 pertanyaan interview magang. Gratis ke email.">
+<meta property="og:url" content="https://skilqu-interview-magang.netlify.app/">
+<meta property="og:image" content="https://skilqu-interview-magang.netlify.app/share.jpg">
+<meta property="og:image:width" content="1440">
+<meta property="og:image:height" content="900">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f3f9ff">
+<link rel="canonical" href="https://skilqu-interview-magang.netlify.app/">
+<meta name="site-kind" content="software">
+<meta name="page-type" content="software">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/backgrounds/backgrounds.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<style>
+:root {
+  --p-bg: #f3f9ff; --p-surface: #ffffff; --p-ink: #0f2a4a; --p-muted: #47607e;
+  --p-accent: #1d5bd0; --p-accent-ink: #ffffff; --p-action: #f59e0b; --p-action-ink: #1f1400;
+  --p-inv-bg: #0f2a4a; --p-inv-surface: #1d3756; --p-inv-ink: #f3f9ff; --p-inv-muted: #a9b8c9;
+  --p-inv-accent: #f59e0b; --p-inv-accent-ink: #111111; --p-inv-action: #f59e0b; --p-inv-action-ink: #1f1400;
+  --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-text: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --display-weight: 800;
+  --display-tracking: -0.03em;
+  --display-tracking-xl: -0.035em;
+  --ly-scale: 0.97;
+}
+</style>
+<!-- no hero entrance: the user asked for the page to open whole, nothing appearing one by one -->
+<script src="assets/backgrounds/backgrounds.js"></script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js">
+<link rel="modulepreload" href="assets/moments/lib.js">
+<link rel="modulepreload" href="assets/moments/word-highlight/moment.js">
+<style>
+  /* page CSS: the Soft Cards world (Rencana Desain Tahap 0) and what sits inside its visuals */
+  :root { --sky: #e6f3ff; --sky-2: #cfe7ff; --blue: #1d5bd0; --hair: #d6e6f7; --amber-ink: #9a4a06;
+          --soft: 0 24px 48px -28px rgba(15, 42, 74, .35), 0 2px 6px -2px rgba(15, 42, 74, .08); }
+  body { background: #f3f9ff; }
+  .hero { background: linear-gradient(180deg, #f3f9ff 0%, var(--sky) 100%); }
+  :where(a, button, input, select, summary):focus-visible { outline: 2px solid #0f2a4a !important; outline-offset: 3px; }
+  ::selection { background: var(--sky-2); color: var(--p-ink); }
+  .btn--primary { box-shadow: 0 10px 22px -12px rgba(194, 120, 3, .9); border: 1px solid #d98706; }
+  .hl { color: var(--blue); }
+  main > section.section:not(.statement), footer.closing { height: auto !important; min-height: 0 !important; padding-block: clamp(64px, 7vw, 96px) !important; }
+  main > section.section.g2 > .wrap { grid-template-rows: auto auto !important; row-gap: var(--s-8) !important; }
+  main > section.section.g2 > .wrap > .grid:last-child, main > section.section.g2 > .wrap > .group > .grid:last-child { flex: none !important; align-self: start !important; }
+  @media (max-width: 1023px) {
+    main > section.hero { height: auto !important; min-height: 0 !important; padding-bottom: var(--s-8); }
+    .hero > .wrap, .hero > .wrap > .hero-text, .hero-text.hero-split, .hero-split > .hero-copy { height: auto !important; }
+    .hero-split > .hero-visual { flex: none !important; height: auto !important; min-height: 0 !important; }
+  }
+  .nav__bar .nav__actions { margin-left: auto; }
+  .nav__logo { font-weight: 800; }
+
+  /* hero */
+  .hero-copy h1 { font-size: clamp(36px, 3.4vw + 8px, 60px); line-height: 1.06; }
+  /* the flow is a plain line of steps, not tabs: nothing here looks tappable */
+  /* the flow: three numbered step chips joined by arrows (a path, not tabs) */
+  .flow { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: var(--s-4) 0 0; padding: 0; list-style: none; counter-reset: step; }
+  .flow li { counter-increment: step; position: relative; display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 15px; color: var(--p-ink); background: rgba(255, 255, 255, .75); border: 1px solid var(--hair); border-radius: 999px; padding: 5px 14px 5px 5px; }
+  .flow li::before { content: counter(step); width: 24px; height: 24px; border-radius: 50%; background: var(--sky); color: var(--blue); display: grid; place-items: center; font-size: 13px; font-weight: 800; }
+  .flow li + li { margin-left: 22px; }
+  .flow li + li::after { content: "→"; position: absolute; left: -23px; color: var(--blue); font-weight: 700; }
+  .flow li:last-child { background: var(--sky); border-color: var(--sky-2); color: var(--blue); }
+  .flow li:last-child::before { background: var(--blue); color: #fff; }
+  /* reassurance: one soft strip instead of loose words on the ground */
+  .hero .reassure { display: inline-flex; width: fit-content; max-width: 100%; background: rgba(255, 255, 255, .7); border: 1px solid var(--hair); border-radius: 12px; padding: 8px 14px; margin-top: 6px; }
+  /* facts: one white card, three cells with icon tiles and hairline dividers */
+  .hero .hero-facts { background: #fff; border-radius: 18px; box-shadow: var(--soft); padding: 18px 8px; gap: 0; }
+  .hero .hero-facts > div { display: grid; grid-template-columns: 40px 1fr; grid-template-rows: auto auto; column-gap: 12px; row-gap: 2px; align-items: center; padding: 0 16px; }
+  .hero .hero-facts > div + div { border-left: 1px solid var(--hair); }
+  .hero .hero-facts .fact__ic { grid-row: 1 / 3; width: 40px; height: 40px; border-radius: 12px; background: var(--sky); color: var(--blue); display: grid; place-items: center; }
+  .hero .hero-facts .fact__ic svg { width: 21px; height: 21px; }
+  .hero .hero-facts dt { font-size: 14px; line-height: 1.3; }
+  .hero .hero-facts dd { line-height: 1.1; }
+  @media (max-width: 639px) {
+    /* phone: the three steps share one strip so they stay on one line */
+    .flow { gap: 0; flex-wrap: nowrap; width: fit-content; max-width: 100%; background: rgba(255, 255, 255, .75); border: 1px solid var(--hair); border-radius: 12px; padding: 8px 14px; }
+    .flow li, .flow li:last-child { font-size: 15px; padding: 0; gap: 0; white-space: nowrap; background: none; border: 0; }
+    .flow li::before { display: none; }
+    .flow li + li { margin-left: 26px; }
+    .flow li + li::after { left: -19px; }
+  }
+  .hero .hero-facts { max-width: 600px !important; }
+  .hero-form { display: grid; gap: 8px; margin-top: var(--s-6); max-width: 560px; }
+  .hero-form label { font-weight: 600; font-size: 15px; }
+  .hero-form .row { display: flex; gap: 10px; }
+  .hero-form input { flex: 1; min-width: 0; height: 56px; border-radius: 14px; border: 1.5px solid var(--hair); background: #fff; padding: 0 18px; font: 500 17px var(--font-text); color: var(--p-ink); }
+  .hero-form input:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+  .hero-form .btn { height: 56px; padding: 0 28px; font-size: 17px; }
+  .reassure { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 4px 0 0; padding: 0; list-style: none; font-size: 14px; color: var(--p-muted); }
+  .reassure li { display: flex; align-items: center; gap: 6px; }
+  .reassure svg { width: 16px; height: 16px; color: var(--blue); }
+  .hero .hero-facts { margin-top: var(--s-6); max-width: 560px; }
+  .hero .hero-facts dd { font-size: 22px; font-weight: 800; color: var(--p-ink); }
+
+  .sheet-stage { position: relative; padding: 48px 0 56px; }
+  .sheet { background: #fff; border-radius: 22px; box-shadow: var(--soft); padding: 24px; position: relative; z-index: 1; }
+  .sheet__head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .sheet__head b { font-size: 18px; }
+  .sheet__q { margin: 2px 0 14px; color: var(--p-muted); font-size: 14px; }
+  .star { display: grid; grid-template-columns: 34px 1fr; gap: 12px; align-items: start; padding: 12px 0; border-top: 1px solid var(--hair); font-size: 15px; line-height: 1.5; }
+  .star b { width: 34px; height: 34px; border-radius: 10px; background: var(--sky); color: var(--blue); display: grid; place-items: center; font-weight: 800; }
+  .star small { display: block; font-size: 13px; font-weight: 600; color: var(--p-muted); }
+  .chip { position: absolute; z-index: 2; background: #fff; border-radius: 16px; box-shadow: var(--soft); padding: 10px 16px; font-weight: 600; font-size: 14px; display: flex; align-items: center; gap: 8px; }
+  .chip--q { top: 0; right: 0; }
+  .chip--q i { width: 24px; height: 24px; border-radius: 8px; background: var(--sky); color: var(--blue); display: grid; place-items: center; }
+  .chip--q i svg { width: 14px; height: 14px; }
+  .stamp { position: absolute; z-index: 3; left: -12px; bottom: 6px; transform: rotate(-8deg); border: 3px solid #f59e0b; background: #fffbeb; color: var(--amber-ink); font-weight: 800; font-size: 19px; letter-spacing: .02em; padding: 8px 14px; border-radius: 12px; display: flex; gap: 6px; align-items: center; }
+  .stamp svg { width: 18px; height: 18px; }
+
+  /* the hero's loop: the flow pills take turns, the sheet's rows fill, then the stamp lands (motion 2 and 3) */
+  .loop-on .flow li { background: #fff; border-color: var(--hair); color: var(--p-muted); transition: background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease); }
+  .loop-on .flow li.is-on { background: var(--blue); border-color: var(--blue); color: #fff; }
+  .loop-on .star p { opacity: .18; transition: opacity .3s var(--ease); }
+  .loop-on .star.is-filled p { opacity: 1; }
+  .loop-on .stamp { opacity: 0; transform: rotate(-8deg) scale(1.25); transition: opacity .25s var(--ease), transform .3s var(--m-ease-enter); }
+  .loop-on .stamp.is-on { opacity: 1; transform: rotate(-8deg) scale(1); }
+
+  /* problem cards */
+  .moment { background: #fff; border-radius: 22px; box-shadow: var(--soft); padding: 28px; display: grid; gap: 12px; align-content: start; }
+  .moment__ic { width: 44px; height: 44px; border-radius: 12px; background: var(--sky); color: var(--blue); display: grid; place-items: center; }
+  .moment__ic svg { width: 22px; height: 22px; }
+  main h3, .closing h3 { font-size: 20px; font-weight: 800; letter-spacing: -.01em; line-height: 1.3; }
+  .moment p { color: var(--p-ink); }
+
+  /* statement */
+  .statement .mo-wh__text { font-size: clamp(28px, 2.2vw + 14px, 46px); line-height: 1.3; font-weight: 700; letter-spacing: -.02em; max-width: 26ch; }
+
+  /* before / after */
+  .ans { background: #fff; border-radius: 22px; box-shadow: var(--soft); padding: 28px; display: grid; gap: 14px; align-content: start; }
+  .ans__tag { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 15px; }
+  .ans__tag svg { width: 20px; height: 20px; }
+  .ans--plain .ans__tag { color: #a3341b; }
+  .ans--plain blockquote { margin: 0; font-size: 18px; line-height: 1.6; color: var(--p-ink); }
+  .ans--star .ans__tag { color: #1d6b3f; }
+  .ans button.star { appearance: none; -webkit-appearance: none; width: 100%; background: none; border: 0; border-top: 1px solid var(--hair); font: inherit; color: inherit; text-align: left; }
+  .ans .star { cursor: pointer; border-radius: 12px; padding: 12px 8px; margin: 0 -8px; transition: opacity .2s var(--ease), background .2s var(--ease); }
+  .ans .star:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+  .ans.is-isolating .star { opacity: .35; }
+  .ans.is-isolating .star.is-picked { opacity: 1; background: var(--sky); }
+  .punch { font-size: 20px; font-weight: 700; margin-top: var(--s-5); }
+
+  /* check card (motion 5): ticks fill to 4/4 */
+  .check { background: #fff; border-radius: 22px; box-shadow: var(--soft); padding: 24px; display: grid; gap: 12px; }
+  .check__head { display: flex; justify-content: space-between; align-items: baseline; font-weight: 700; }
+  .check__head span { font-variant-numeric: tabular-nums; color: var(--blue); }
+  .check ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .check li { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+  .check li i { width: 24px; height: 24px; border-radius: 8px; border: 1.5px solid var(--hair); display: grid; place-items: center; color: #fff; }
+  .check li i svg { width: 14px; height: 14px; }
+  .check li.is-done i { background: var(--blue); border-color: var(--blue); }
+  .check__bar { height: 8px; border-radius: 99px; background: var(--sky); overflow: hidden; }
+  .check__bar b { display: block; height: 100%; width: calc(var(--done, 4) * 25%); background: var(--blue); transition: width .35s var(--ease); }
+
+  /* what you get */
+  .gets { display: grid; gap: 16px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  @media (max-width: 1023px) { .gets { grid-template-columns: 1fr; } }
+  .get { background: #fff; border-radius: 22px; box-shadow: var(--soft); padding: 24px; display: grid; gap: 12px; align-items: start; }
+  .kit { background: #fff; border-radius: 22px; box-shadow: var(--soft); padding: 28px; display: grid; gap: 4px; }
+  .card.kit > h3 { font-size: 20px; font-weight: 800; margin-bottom: 8px; }
+  .closing__cta .section-head { align-content: start; align-self: start; }
+  .kit__row { display: grid; grid-template-columns: 24px 1fr; gap: 14px; padding: 14px 0; border-top: 1px solid var(--hair); }
+  .kit__row h4 { font-size: 16px; font-weight: 800; margin: 0 0 2px; }
+  .get__ic { width: 22px; height: 22px; color: var(--blue); margin-top: 2px; }
+  .get h3 { margin-bottom: 4px; }
+
+  /* comparison table */
+  .cmp-wrap { background: #fff; border-radius: 22px; box-shadow: var(--soft); overflow: hidden; }
+  .cmp { width: 100%; border-collapse: collapse; font-size: 16px; table-layout: fixed; }
+  .cmp th, .cmp td { padding: 18px 16px; text-align: center; border-bottom: 1px solid var(--hair); line-height: 1.4; }
+  .cmp thead th { font-size: 15px; font-weight: 700; background: #f7fbff; }
+  .cmp th[scope="row"] { text-align: left; font-weight: 600; width: 30%; }
+  .cmp tbody tr:last-child > * { border-bottom: 0; }
+  .cmp .us { background: #eef6ff; font-weight: 700; }
+  .cmp .nb { display: inline-block; white-space: nowrap; }
+  .cmp thead .us { background: var(--blue); color: #fff; }
+  .cmp svg { width: 20px; height: 20px; display: block; margin: 0 auto; }
+  .cmp .yes { color: #1d6b3f; } .cmp .no { color: #8a5a5a; }
+
+  /* peek + plans */
+  .peek { position: relative; background: #fff; border-radius: 22px; box-shadow: var(--soft); padding: 28px; overflow: hidden; }
+  .peek__head { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 12px; border-bottom: 2px solid var(--p-ink); margin-bottom: 4px; }
+  .peek__row { padding: 14px 0; border-bottom: 1px dashed var(--hair); }
+  .peek__row b { display: block; margin-bottom: 4px; }
+  .peek__row p { color: var(--p-muted); }
+  .peek__row--blur { filter: blur(5px); user-select: none; }
+  .peek__fade { position: absolute; inset: auto 0 0 0; height: 55%; background: linear-gradient(to bottom, rgba(255,255,255,0), #fff 55%); display: flex; align-items: flex-end; justify-content: center; padding: 24px; font-weight: 700; }
+  .plan { background: #fff; border-radius: 22px; box-shadow: var(--soft); padding: 28px; display: grid; gap: 14px; align-content: start; border: 2px solid transparent; }
+  .plan--free { border-color: var(--blue); }
+  .card.plan { align-self: start; height: auto; }
+  .card.plan h3 { font-size: 20px; font-weight: 800; }
+  .card .plan__price { font-size: 34px; font-weight: 800; letter-spacing: -.02em; line-height: 1.1; }
+  .plan__price { font-size: 34px; font-weight: 800; letter-spacing: -.02em; }
+  .plan__price small { font-size: 16px; font-weight: 600; color: var(--p-muted); letter-spacing: 0; }
+  .plan ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .plan li { display: flex; justify-content: space-between; gap: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--hair); }
+  .plan li svg { width: 20px; height: 20px; color: var(--blue); flex: none; order: 2; }
+  .plan__price small { display: block; margin-top: 4px; }
+  .plan--pass ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 24px; }
+  @media (max-width: 1023px) { .plan--pass ul { grid-template-columns: 1fr; } }
+  .soon { font-size: 13px; font-weight: 600; background: var(--sky); color: var(--p-ink); padding: 2px 10px; border-radius: 99px; margin-left: 6px; white-space: nowrap; }
+
+  /* closing form */
+  .closing-form { background: #fff; border-radius: 22px; box-shadow: var(--soft); padding: 28px; display: grid !important; grid-template-columns: 1fr !important; gap: 16px; }
+  .closing-form .field, .closing-form .btn-row { grid-column: 1 / -1; }
+  .closing-form select, .closing-form input { width: 100%; }
+  .closing-form .btn { width: 100%; justify-content: center; }
+  .reassure-line { font-size: 16px; color: var(--p-muted); margin: -4px 0 0; }
+  .closing .form select { height: 48px; border-radius: var(--r-sm); border: 1px solid var(--line-strong); padding: 0 14px; font: 500 16px var(--font-text); background: #fff; color: var(--p-ink); }
+
+  /* revisi 9 Nov: hero opens whole and sits centred, no empty band between the form and the facts */
+  @media (min-width: 1024px) {
+    .hero-text.hero-split { align-items: center; }
+    .hero-split > .hero-copy { height: auto; align-self: center; }
+    .hero-split > .hero-copy > .hero-facts { margin-top: 40px; }
+    .hero-split > .hero-visual { height: auto; align-self: center; }
+  }
+
+  /* statement: a band its own height, not a half-empty screen */
+  main > section.statement { height: auto !important; min-height: 0 !important; padding-block: clamp(72px, 8vw, 120px) !important; background: var(--sky); }
+  .statement .mo-wh__text { max-width: 30ch; margin-inline: auto; text-align: center; }
+
+  /* plain answer: what it leaves out, row for row against the STAR card */
+  .miss__label { font-size: 15px; font-weight: 700; color: var(--p-muted); margin-top: 4px; }
+  .miss { list-style: none; margin: 0; padding: 0; display: grid; }
+  .miss li { display: grid; grid-template-columns: 34px 1fr; gap: 12px; align-items: center; padding: 10px 0; border-top: 1px dashed var(--hair); font-size: 15px; color: var(--p-muted); }
+  .miss b { width: 34px; height: 34px; border-radius: 10px; border: 1.5px dashed #e2b2a6; color: #a3341b; display: grid; place-items: center; font-weight: 800; }
+  .isi__side { display: grid; gap: var(--s-5); align-content: start; }
+  .isi__side .btn-row { margin: 0; }
+  .cmp-block { display: grid; gap: var(--s-5); }
+  .cmp-block > h3 { font-size: clamp(22px, 1vw + 14px, 28px); }
+
+  /* video cards: a row the visitor swipes or steps with the arrows; no autoplay */
+  .vid-head { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--s-6); }
+  .vid-head .section-head { max-width: 720px; }
+  .vid-nav { display: flex; gap: 10px; flex: none; }
+  .vid-btn { width: 48px; height: 48px; border-radius: 999px; border: 1.5px solid var(--hair); background: #fff; color: var(--p-ink); display: grid; place-items: center; cursor: pointer; box-shadow: var(--soft); transition: background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease), opacity .2s var(--ease); }
+  .vid-btn svg { width: 22px; height: 22px; }
+  .vid-btn:hover:not([aria-disabled="true"]) { background: var(--blue); border-color: var(--blue); color: #fff; }
+  .vid-btn[aria-disabled="true"] { opacity: .4; cursor: default; box-shadow: none; }
+  .vid-track { list-style: none; margin: var(--s-6) -12px 0; padding: 12px 12px 28px; display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 12px; scrollbar-width: none; overscroll-behavior-x: contain; }
+  .vid-track::-webkit-scrollbar { display: none; }
+  #video { overflow-x: clip; }
+  .vid-track { padding-bottom: 48px; margin-bottom: -20px; }
+  .vid-track { margin-right: calc(50% - 50vw); }
+  .vid-track::after { content: ""; flex: 0 0 calc(50vw - 50% - 8px); }
+  .vid { flex: 0 0 calc((100% - 60px) / 3.3); scroll-snap-align: start; }
+  .vid a { display: flex; flex-direction: column; height: 100%; background: #fff; border-radius: 22px; box-shadow: var(--soft); overflow: hidden; color: inherit; text-decoration: none; transition: transform .25s var(--ease); }
+  .vid a:hover { transform: translateY(-2px); }
+  .vid__thumb { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; background: var(--sky); }
+  .vid__thumb img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .4s var(--ease); }
+  .vid a:hover .vid__thumb img { transform: scale(1.03); }
+  .vid__thumb::after { content: ""; position: absolute; left: 50%; top: 50%; width: 56px; height: 56px; margin: -28px 0 0 -28px; border-radius: 50%; background: rgba(255, 255, 255, .94) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8 5.5v13l10.5-6.5z' fill='%230f2a4a'/%3E%3C/svg%3E") 56% 50% / 24px no-repeat; box-shadow: 0 6px 16px -6px rgba(0, 0, 0, .45); }
+  .vid__len { position: absolute; right: 10px; bottom: 10px; background: rgba(15, 42, 74, .9); color: #fff; font-size: 13px; font-weight: 700; padding: 3px 8px; border-radius: 8px; font-variant-numeric: tabular-nums; }
+  .vid__body { display: flex; flex-direction: column; gap: 6px; padding: 18px 20px 22px; flex: 1; }
+  .vid__topic { font-size: 13px; font-weight: 700; color: var(--blue); }
+  .vid__title { font-size: 17px; font-weight: 700; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .vid__ch { font-size: 14px; color: var(--p-muted); margin-top: auto; padding-top: 4px; }
+  .vid-foot { color: var(--p-muted); }
+  .vid-foot a { color: var(--blue); font-weight: 700; }
+  .vid-foot__link { display: inline-flex; align-items: center; min-height: 44px; }
+  .cmp .sm { display: none; }
+  @media (max-width: 639px) { .cmp .lg { display: none; } .cmp .sm { display: inline; } }
+  /* the phone bar steps aside while the final form is on screen */
+  html.at-form .actionbar { transform: translateY(100%) !important; visibility: hidden !important; }
+  .hero-form .hero-err { color: #a3341b; font-size: 15px; font-weight: 600; margin: 0; }
+  @media (max-width: 1023px) { .vid { flex-basis: calc((100% - 20px) / 2.2); } }
+
+  /* free plan fills its column and carries the action */
+  #intip .plan-col { display: grid; align-self: stretch; }
+  .card.plan.plan--free { align-self: stretch; height: auto; align-content: stretch; grid-template-rows: auto auto auto 1fr; }
+  .plan__cta { align-self: end; display: grid; gap: 8px; justify-items: center; }
+  .plan__cta .btn { width: 100%; justify-content: center; }
+
+  /* FAQ side: the heading column carries a short line and one small action */
+  .faq-side { display: grid; gap: var(--s-4); align-content: start; align-self: start; position: sticky; top: 104px; }
+  .faq-cta { background: #fff; border-radius: 22px; box-shadow: var(--soft); padding: 24px 28px; display: grid; gap: 10px; justify-items: start; max-width: 440px; margin-top: var(--s-3); }
+  .faq-cta b { font-size: 20px; font-weight: 800; }
+  .faq-cta p { color: var(--p-muted); }
+
+  /* closing: what lands in the inbox */
+  .inbox { margin-top: var(--s-6); background: #fff; border-radius: 22px; box-shadow: var(--soft); overflow: hidden; max-width: 560px; }
+  .inbox__bar { display: flex; justify-content: space-between; padding: 12px 20px; background: #f7fbff; border-bottom: 1px solid var(--hair); font-size: 14px; font-weight: 700; color: var(--p-muted); }
+  .inbox__mail { display: grid; grid-template-columns: 40px 1fr; gap: 14px; padding: 20px; }
+  .inbox__av { width: 40px; height: 40px; border-radius: 12px; background: var(--blue); color: #fff; display: grid; place-items: center; font-weight: 800; }
+  .inbox__from { display: flex; justify-content: space-between; align-items: baseline; font-size: 15px; }
+  .inbox__from span { color: var(--p-muted); font-size: 13px; }
+  .inbox__subj { font-weight: 700; margin-top: 2px; }
+  .inbox__prev { color: var(--p-muted); font-size: 15px; margin-top: 4px; }
+  .inbox__files { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .inbox__files span { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid var(--hair); border-radius: 12px; font-size: 14px; font-weight: 600; background: #f7fbff; }
+  .inbox__files svg { width: 18px; height: 18px; color: var(--blue); }
+  .closing .inbox p { font-size: 15px; line-height: 1.5; margin: 0; }
+  .closing .inbox .inbox__from { font-size: 16px; }
+  .closing .inbox .inbox__subj { margin-top: 2px; }
+  .closing .inbox .inbox__prev { margin-top: 4px; color: var(--p-muted); }
+  .closing-form { align-self: start; }
+
+  @media (max-width: 1023px) {
+    .faq-side { position: static; }
+    .faq-cta { display: none; }
+    /* phone: a compact inbox stays, so the form keeps its "this is what you get" right above it */
+    .inbox { margin-top: var(--s-5); }
+    .closing .inbox .inbox__prev { display: none; }
+    .inbox__mail { padding: 16px; }
+  }
+  @media (max-width: 639px) {
+    .vid-nav { display: none; }
+    .vid { flex-basis: 82%; }
+    .vid-track { margin-top: var(--s-3); }
+    .statement .mo-wh__text { text-align: left; }
+  }
+
+  @media (max-width: 1023px) {
+    .sheet-stage { padding-top: 0; }
+    .chip--q { display: none; }
+  }
+  @media (max-width: 639px) {
+    #isi .btn-row { display: none; }
+    .ans, .get, .card.plan { padding: 20px; }
+    .ans .star { padding: 8px; }
+    .punch { margin-top: var(--s-4); font-size: 18px; }
+    .hero-copy h1 { font-size: 31px; }
+    #solusi .check { display: none; }
+    .peek__row--blur + .peek__row--blur { display: none; }
+    .hero-form .row { flex-direction: column; }
+    .hero-form .btn { width: 100%; }
+    .hero-form input { flex: none; width: 100%; }
+    .stamp { left: auto; right: 12px; bottom: 0; font-size: 16px; }
+    .sheet-stage { padding-bottom: 32px; }
+    .cmp { font-size: 14px; }
+    .cmp th, .cmp td { padding: 12px 6px; }
+  }
+  /* the stamp lands once on load (the user kept only this one) */
+  @keyframes stampland { from { opacity: 0; transform: rotate(-8deg) scale(1.3); } to { opacity: 1; transform: rotate(-8deg) scale(1); } }
+  .hero .stamp { animation: stampland .4s cubic-bezier(.2, .8, .2, 1) .8s both; }
+  /* motion set 2 (9 Nov, user asked): sent stamp, card lift, section reveal, table ticks, one button shine */
+  .closing-form { position: relative; }
+  .closing-form .stamp--sent { left: auto; bottom: auto; right: 18px; top: -20px; animation: stampland .4s cubic-bezier(.2, .8, .2, 1) both; }
+  .closing-form .stamp--sent[hidden] { display: none; }
+
+  .moment, .card.kit, .card.check, .card.plan, .card.peek, .faq-cta, .ans, .inbox, .cmp-wrap { transition: transform .25s var(--ease), box-shadow .25s var(--ease); }
+  @media (hover: hover) and (pointer: fine) {
+    :is(.moment, .card.kit, .card.check, .card.plan, .card.peek, .faq-cta, .ans, .inbox):hover { transform: translateY(-4px); box-shadow: 0 30px 56px -28px rgba(15, 42, 74, .45), 0 2px 6px -2px rgba(15, 42, 74, .08); }
+  }
+
+  html.rv main > section.section:not(.statement) > .wrap, html.rv footer.closing > .wrap { opacity: 0; transform: translateY(28px); transition: opacity .6s var(--ease), transform .6s cubic-bezier(.2, .8, .2, 1); }
+  html.rv main > section.section > .wrap.is-in, html.rv footer.closing > .wrap.is-in { opacity: 1; transform: none; }
+
+  @keyframes tickpop { from { transform: scale(0); opacity: 0; } 70% { transform: scale(1.2); opacity: 1; } to { transform: scale(1); opacity: 1; } }
+  html.rv .cmp td.us svg { transform: scale(0); opacity: 0; }
+  html.rv .cmp-wrap.is-in td.us svg { animation: tickpop .45s cubic-bezier(.2, .8, .2, 1) both; }
+  html.rv .cmp-wrap.is-in tr:nth-child(3) td.us svg { animation-delay: .35s; }
+  html.rv .cmp-wrap.is-in tr:nth-child(4) td.us svg { animation-delay: .6s; }
+
+  .btn--primary { position: relative; overflow: hidden; isolation: isolate; }
+  .btn--primary::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, .55) 50%, transparent 70%); transform: translateX(-120%); pointer-events: none; }
+  @keyframes shine { to { transform: translateX(120%); } }
+  .btn--primary.is-shine::before { animation: shine .9s ease-out both; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .closing-form .stamp--sent { animation: none; }
+    :is(.moment, .card.kit, .card.check, .card.plan, .card.peek, .faq-cta, .ans, .inbox):hover { transform: none; }
+    .btn--primary.is-shine::before { animation: none; }
+    .hero .stamp { animation: none; }
+    .loop-on .star p { opacity: 1; } .loop-on .stamp { opacity: 1; transform: rotate(-8deg); }
+  }
+</style>
+</head>
+<body>
+<!-- type: software (platform belajar)
+     deal: hero split (pinned by user: Soft Cards), nav logo + one button (single conversion goal, module brief),
+     close: form, buttons solid amber (#F59E0B pinned by module), font Plus Jakarta Sans (pinned by user)
+     moments: word-highlight in #pernyataan; count: 100+ in the hero facts -->
+<header class="nav">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Langsung ke isi</a>
+    <a class="nav__logo" href="#top"><span class="mark mark--initial" aria-hidden="true">S</span>skilqu</a>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="#daftar">Ambil Gratis</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- BAGIAN 1: HERO -->
+  <section class="hero hero--split" aria-labelledby="hero-h">
+    <div class="wrap">
+      <div class="hero-text grid hero-split">
+        <div class="hero-copy span-7">
+          <h1 id="hero-h">Pertanyaan Interview Magang yang Paling Sering Keluar &amp; <span class="hl">Cara Jawabnya</span> (+&nbsp;Cheat Sheet Gratis)</h1>
+          <ol class="flow" aria-label="Alur belajar">
+            <li>Pahami</li><li>Latihan</li><li>Siap interview</li>
+          </ol>
+          <p class="t-lead" style="margin-top: var(--s-4)">Video 15 menit Teknik STAR + cheat sheet 10 pertanyaan. Gratis, langsung dikirim ke email kamu.</p>
+          <form class="hero-form" action="#daftar" method="get" data-hero-form novalidate>
+            <label for="h-email">Email kamu</label>
+            <div class="row">
+              <input id="h-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="nama@kampus.ac.id" aria-describedby="h-email-err">
+              <button class="btn btn--primary" type="submit">Ambil Gratis</button>
+            </div>
+            <p class="hero-err" id="h-email-err" hidden>Cek lagi emailmu, contohnya nama@kampus.ac.id.</p>
+            <ul class="reassure">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>100% gratis</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Dikirim ke email</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Tanpa kartu kredit</li>
+            </ul>
+          </form>
+          <dl class="hero-facts">
+            <div><span class="fact__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3 2.8-4.6 5.5-4.6s4.9 1.6 5.5 4.6"/><path d="M15.5 5.2a3 3 0 0 1 0 5.6M17.5 14.6c1.6.6 2.7 2 3 4.4"/></svg></span><dt>Mahasiswa per bulan</dt><dd><span data-m-count>100</span>+</dd></div>
+            <div><span class="fact__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3z"/></svg></span><dt>Durasi video</dt><dd>15 menit</dd></div>
+            <div><span class="fact__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span><dt>Pertanyaan di cheat sheet</dt><dd>10</dd></div>
+          </dl>
+        </div>
+        <div class="hero-visual span-5 start-8">
+          <div class="sheet-stage" role="img" aria-label="Contoh cheat sheet: jawaban STAR untuk pertanyaan tentang pengalaman organisasi, diberi stempel siap interview">
+            <div class="chip chip--q" aria-hidden="true"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg></i>Pertanyaan 2 dari 10</div>
+            <div class="sheet" aria-hidden="true">
+              <div class="sheet__head"><b>Cheat Sheet Interview Magang</b></div>
+              <p class="sheet__q">“Ceritakan pengalaman organisasimu.”</p>
+              <div class="star"><b>S</b><p><small>Situasi</small>Saat jadi koordinator acara, dua divisi berebut anggaran.</p></div>
+              <div class="star"><b>T</b><p><small>Tugas</small>Aku harus memastikan acara tetap sesuai jadwal.</p></div>
+              <div class="star"><b>A</b><p><small>Aksi</small>Aku ajak rapat dan membagi ulang anggaran sesuai prioritas.</p></div>
+              <div class="star"><b>R</b><p><small>Hasil</small>Acara tepat waktu, dana tersisa 10%.</p></div>
+            </div>
+            <div class="stamp" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Siap interview</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAGIAN 2: PROBLEM & AGITATION -->
+  <section class="section" id="masalah" aria-labelledby="masalah-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="masalah-h">3 momen yang bikin interview gagal, padahal kamu mampu</h2></div>
+      <div class="grid">
+        <article class="card moment span-4">
+          <h3>“Ceritakan tentang dirimu.”</h3>
+          <p>Kamu malah cerita hobi. HRD belum dengar alasan untuk memilihmu.</p>
+        </article>
+        <article class="card moment span-4">
+          <h3>“Ceritakan pengalaman organisasimu.”</h3>
+          <p>Jawabanmu panjang tanpa inti, dan HRD kehilangan fokus.</p>
+        </article>
+        <article class="card moment span-4">
+          <h3>“Apa kekuranganmu?”</h3>
+          <p>Kamu jawab “perfeksionis”. Klise, dan HRD sudah mendengarnya ratusan kali.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- word-highlight: the problem's closing line as its own statement (motion 4) -->
+  <section class="section statement" id="pernyataan" data-moment="word-highlight" aria-label="Kenapa tips saja tidak cukup">
+    <div class="wrap">
+      <p class="mo-wh__text">Save puluhan tips atau nonton tutorial acak nggak akan menolong kalau kamu belum pernah <strong>latihan menyusun jawabannya</strong>.</p>
+    </div>
+  </section>
+
+  <!-- BAGIAN 3: SOLUTION & INSIDE PREVIEW -->
+  <section class="section g2" id="solusi" aria-labelledby="solusi-h">
+    <div class="wrap">
+      <div class="group">
+        <div class="section-head">
+          <h2 id="solusi-h">Cara menjawab pertanyaan interview magang pakai Teknik STAR</h2>
+        </div>
+        <div class="grid">
+          <div class="card ans ans--plain span-5">
+            <span class="ans__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>Jawaban biasa</span>
+            <blockquote>“Saya pernah ikut kepanitiaan dan belajar kerja sama tim.”</blockquote>
+            <p class="miss__label">Yang belum terjawab:</p>
+            <ul class="miss">
+              <li><b>S</b>Situasinya apa? Nggak disebut.</li>
+              <li><b>T</b>Tugasmu apa? Nggak jelas.</li>
+              <li><b>A</b>Kamu ngapain? Nggak ada contohnya.</li>
+              <li><b>R</b>Hasilnya? Nggak ada angka.</li>
+            </ul>
+          </div>
+          <div class="card ans ans--star span-7" data-isolate>
+            <span class="ans__tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Jawaban STAR, klik tiap bagian</span>
+            <button type="button" class="star"><b>S</b><p><small>Situasi</small>Saat jadi koordinator acara, dua divisi berebut anggaran.</p></button>
+            <button type="button" class="star"><b>T</b><p><small>Tugas</small>Aku harus memastikan acara tetap sesuai jadwal.</p></button>
+            <button type="button" class="star"><b>A</b><p><small>Aksi</small>Aku ajak rapat dan membagi ulang anggaran sesuai prioritas.</p></button>
+            <button type="button" class="star"><b>R</b><p><small>Hasil</small>Acara berjalan sesuai jadwal dan dana masih tersisa 10%.</p></button>
+          </div>
+        </div>
+        <p class="punch">Bedanya? Jawaban kedua punya bukti. Itu yang dicari HRD.</p>
+      </div>
+      <div class="grid" id="isi">
+        <div class="span-7">
+          <div class="card kit">
+            <h3>Isi Free Starter Kit</h3>
+            <div class="kit__row"><svg class="get__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3z"/></svg><div><h4>Video 15 menit</h4><p>Teknik STAR, bisa ditonton dicicil di HP.</p></div></div>
+            <div class="kit__row"><svg class="get__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><div><h4>Cheat sheet</h4><p>10 pertanyaan, termasuk pertanyaan jebakan, dengan kerangka jawabannya.</p></div></div>
+            <div class="kit__row"><svg class="get__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10 12 5l9 5-9 5z"/><path d="M7 12v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4"/></svg><div><h4>Contoh jawaban</h4><p>Dari pengalaman kampus: organisasi, kepanitiaan, tugas kuliah.</p></div></div>
+          </div>
+        </div>
+        <div class="span-5 isi__side">
+          <div class="card check" data-check-loop role="img" aria-label="Cek jawaban STAR: situasi, tugas, aksi, dan hasil sudah lengkap, 4 dari 4">
+            <div class="check__head" aria-hidden="true">Cek jawaban STAR-mu <span data-check-count>4/4</span></div>
+            <div class="check__bar" aria-hidden="true"><b></b></div>
+            <ul aria-hidden="true">
+              <li class="is-done"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Situasi jelas, satu kalimat</li>
+              <li class="is-done"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Tugasmu disebut</li>
+              <li class="is-done"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Aksi yang kamu ambil</li>
+              <li class="is-done"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Hasil pakai angka</li>
+            </ul>
+          </div>
+          <div class="btn-row"><a class="btn btn--primary" href="#daftar">Ambil Gratis Sekarang</a></div>
+        </div>
+      </div>
+      <!-- tabel perbandingan (wajib modul, Bagian 3): dipindah ke sini dari bagian lama "Kenapa nggak nonton YouTube aja?" -->
+      <div class="cmp-block" id="perbandingan">
+        <h3 id="cmp-h">YouTube, Bootcamp, atau Skilqu?</h3>
+      <div class="cmp-wrap">
+        <table class="cmp">
+          <thead><tr><td></td><th scope="col">YouTube gratis</th><th scope="col">Bootcamp</th><th scope="col" class="us">Skilqu</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Biaya</th><td>Rp0</td><td><span class="nb">Rp500&nbsp;rb–</span><span class="nb">3&nbsp;jt</span></td><td class="us">Rp0 untuk mulai</td></tr>
+            <tr><th scope="row">Waktu belajar</th><td>1–2 jam, acak</td><td>Beberapa minggu</td><td class="us">15 menit</td></tr>
+            <tr><th scope="row"><span class="lg">Terstruktur + template jawaban</span><span class="sm">Template jawaban</span></th><td class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" role="img" aria-label="Tidak"><path d="M18 6 6 18M6 6l12 12"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Ya"><path d="M20 6 9 17l-5-5"/></svg></td><td class="us yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Ya"><path d="M20 6 9 17l-5-5"/></svg></td></tr>
+            <tr><th scope="row"><span class="lg">Contoh dari pengalaman kampus</span><span class="sm">Contoh kampus</span></th><td class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" role="img" aria-label="Tidak"><path d="M18 6 6 18M6 6l12 12"/></svg></td><td>Kadang</td><td class="us yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Ya"><path d="M20 6 9 17l-5-5"/></svg></td></tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAGIAN 4: TRUST & FAQ -->
+  <section class="section g2" id="intip" aria-labelledby="intip-h">
+    <div class="wrap">
+      <div class="group">
+        <div class="section-head"><h2 id="intip-h">Intip isi cheat sheet-nya</h2></div>
+        <div class="grid">
+          <div class="card peek span-7" role="img" aria-label="Halaman pertama cheat sheet: dua pertanyaan dengan kerangka jawaban terlihat, sisanya diburamkan">
+            <div class="peek__head" aria-hidden="true"><b>Cheat Sheet Interview Magang</b><span class="t-small muted">Halaman 1 dari 4</span></div>
+            <div class="peek__row" aria-hidden="true"><b>1. “Ceritakan tentang dirimu.”</b><p>Kerangka: siapa kamu sekarang → satu pengalaman paling relevan → kenapa posisi ini.</p></div>
+            <div class="peek__row" aria-hidden="true"><b>2. “Ceritakan pengalaman organisasimu.”</b><p>Kerangka STAR: Situasi → Tugas → Aksi → Hasil (pakai angka).</p></div>
+            <div class="peek__row peek__row--blur" aria-hidden="true"><b>3. “Apa kekuranganmu?”</b><p>Kerangka: kekurangan nyata → langkah perbaikan → hasilnya sekarang.</p></div>
+            <div class="peek__row peek__row--blur" aria-hidden="true"><b>4. “Kenapa kami harus memilihmu?”</b><p>Kerangka: kebutuhan posisi → bukti kamu bisa → nilai tambah.</p></div>
+            <div class="peek__fade" aria-hidden="true">Lanjutannya ada di Free Starter Kit</div>
+          </div>
+          <div class="span-5 plan-col">
+            <div class="card plan plan--free">
+              <h3>Free Starter Kit</h3>
+              <p class="plan__price">Rp0 <small>cukup nama dan email</small></p>
+              <ul>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Video 15 menit Teknik STAR</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Cheat sheet 10 pertanyaan</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Contoh jawaban pengalaman kampus</li>
+              </ul>
+              <div class="plan__cta"><a class="btn btn--primary" href="#daftar">Ambil Gratis</a><span class="t-small muted">Tanpa kartu kredit</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card plan plan--pass span-12">
+          <h3>Setelah gratisnya: Skilqu Pass</h3>
+          <p class="plan__price">Rp49.000 <small>/bulan, kurang dari Rp1.700 per hari</small></p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Semua isi Free Starter Kit</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>30+ modul: HRD, psikolog, negosiasi gaji</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Persiapan per industri: oil &amp; gas, maritim, startup</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Bank soal dan seri video</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Mock Interview 1‑on‑1<span class="soon">segera hadir</span></span></li>
+          </ul>
+          <p class="muted">Nggak wajib. Coba yang gratis dulu, bisa batal kapan saja.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="grid">
+        <div class="section-head span-6 faq-side">
+          <h2 id="faq-h">Masih ragu?</h2>
+          <p class="t-lead">Jawaban singkat sebelum kamu ambil Starter Kit.</p>
+          <div class="card faq-cta">
+            <b>Coba yang gratis dulu</b>
+            <p>Video 15 menit + cheat sheet 10 pertanyaan, langsung ke email. Nggak cocok? Cukup berhenti berlangganan.</p>
+            <a class="btn btn--primary" href="#daftar">Ambil Gratis</a>
+          </div>
+        </div>
+        <div class="faq span-5 start-8">
+        <div class="faq__item"><h3>Beneran gratis?</h3><p>Ya, Rp0. Cukup nama dan email, tanpa kartu kredit.</p></div>
+        <div class="faq__item"><h3>Lagi sibuk skripsi, sempat nggak?</h3><p>Videonya cuma 15 menit dan bisa dicicil di HP.</p></div>
+        <div class="faq__item"><h3>Apa bedanya dengan YouTube?</h3><p>Materinya terstruktur, ada template jawaban, dan contohnya dari pengalaman kampus.</p></div>
+        <div class="faq__item"><h3>Emailku aman?</h3><p>Aman. Email cuma dipakai untuk mengirim materi, dan kamu bisa berhenti berlangganan kapan saja.</p></div>
+        <div class="faq__item"><h3>Apa itu Skilqu Pass?</h3><p>Paket lanjutan Rp49.000/bulan untuk membuka 30+ modul. Nggak wajib: coba yang gratis dulu, berhenti kapan aja dengan satu klik.</p></div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- video tips: kartu geser yang membuka YouTube di tab baru. Ganti video: ubah ID di href dan di src thumbnail-nya -->
+  <section class="section" id="video" aria-labelledby="video-h">
+    <div class="wrap">
+      <div class="vid-head">
+        <div class="section-head">
+          <h2 id="video-h">Bonus: video tips interview pilihan dari YouTube</h2>
+          <p class="t-lead">Sambil menunggu Starter Kit-mu, tonton video untuk pertanyaan yang sering keluar. Setelah itu latih jawabanmu pakai cheat sheet.</p>
+        </div>
+        <div class="vid-nav">
+          <button type="button" class="vid-btn" data-vid-prev aria-label="Video sebelumnya" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18 9 12l6-6"/></svg></button>
+          <button type="button" class="vid-btn" data-vid-next aria-label="Video berikutnya"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+        </div>
+      </div>
+      <ul class="vid-track" data-vid-track aria-label="Video tips interview">
+        <li class="vid"><a href="https://www.youtube.com/watch?v=sUFCWuE9nA4" target="_blank" rel="noopener">
+          <span class="vid__thumb"><img src="https://i.ytimg.com/vi/sUFCWuE9nA4/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid__len">7:44</span></span>
+          <span class="vid__body"><span class="vid__topic">Interview magang</span><span class="vid__title">Empat Pertanyaan Interview Magang yang Pasti Ditanyakan</span><span class="vid__ch">Samuel &amp; Claudya</span></span>
+        </a></li>
+        <li class="vid"><a href="https://www.youtube.com/watch?v=9WsRvH1BSJQ" target="_blank" rel="noopener">
+          <span class="vid__thumb"><img src="https://i.ytimg.com/vi/9WsRvH1BSJQ/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid__len">4:33</span></span>
+          <span class="vid__body"><span class="vid__topic">Ceritakan tentang dirimu</span><span class="vid__title">Tips Jawab Pertanyaan Ceritakan Tentang Dirimu dari Vina Muliana</span><span class="vid__ch">Jobstreet by SEEK (Indonesia)</span></span>
+        </a></li>
+        <li class="vid"><a href="https://www.youtube.com/watch?v=JZBjCA5Z19c" target="_blank" rel="noopener">
+          <span class="vid__thumb"><img src="https://i.ytimg.com/vi/JZBjCA5Z19c/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid__len">3:46</span></span>
+          <span class="vid__body"><span class="vid__topic">Teknik STAR</span><span class="vid__title">Tips Interview dengan Metode STAR</span><span class="vid__ch">Maukerja Indonesia</span></span>
+        </a></li>
+        <li class="vid"><a href="https://www.youtube.com/watch?v=wdLqyvoJd2I" target="_blank" rel="noopener">
+          <span class="vid__thumb"><img src="https://i.ytimg.com/vi/wdLqyvoJd2I/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid__len">7:17</span></span>
+          <span class="vid__body"><span class="vid__topic">Kelebihan &amp; kekurangan</span><span class="vid__title">Cara Jawab Pertanyaan Interview: Sebutkan Kelebihan dan Kekurangan Kamu</span><span class="vid__ch">Samuel &amp; Claudya</span></span>
+        </a></li>
+        <li class="vid"><a href="https://www.youtube.com/watch?v=lRuLOW9ZCwU" target="_blank" rel="noopener">
+          <span class="vid__thumb"><img src="https://i.ytimg.com/vi/lRuLOW9ZCwU/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid__len">3:51</span></span>
+          <span class="vid__body"><span class="vid__topic">Kenapa memilihmu</span><span class="vid__title">Tips Menjawab “Kenapa Kami Harus Menerima Anda di Perusahaan Ini?” Saat Interview</span><span class="vid__ch">Maukerja Indonesia</span></span>
+        </a></li>
+        <li class="vid"><a href="https://www.youtube.com/watch?v=R3I3hm27G1U" target="_blank" rel="noopener">
+          <span class="vid__thumb"><img src="https://i.ytimg.com/vi/R3I3hm27G1U/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid__len">4:27</span></span>
+          <span class="vid__body"><span class="vid__topic">Kesan pertama</span><span class="vid__title">Trik Bikin HRD Kepincut saat Interview!</span><span class="vid__ch">Jobstreet by SEEK (Indonesia)</span></span>
+        </a></li>
+      </ul>
+      <p class="vid-foot">Video dibuka di YouTube (tab baru). Mau langsung latihan dengan kerangka jawabannya? <a class="vid-foot__link" href="#daftar">Ambil cheat sheet gratis</a></p>
+    </div>
+  </section>
+</main>
+
+<!-- BAGIAN 5: FINAL CTA & FORM -->
+<footer class="footer closing" id="daftar" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--type">
+      <div class="grid">
+        <div class="section-head span-7">
+          <h2 id="close-h">Ambil gratis: video 15 menit Teknik STAR + cheat sheet interview</h2>
+          <p class="t-lead">Jadwal interview kamu nggak akan mundur. Persiapanmu bisa mulai hari ini.</p>
+          <div class="inbox" role="img" aria-label="Contoh email dari Skilqu berisi video Teknik STAR 15 menit dan cheat sheet 10 pertanyaan">
+            <div class="inbox__bar" aria-hidden="true"><span>Kotak masuk</span><span>1 email baru</span></div>
+            <div class="inbox__mail" aria-hidden="true">
+              <span class="inbox__av">S</span>
+              <div>
+                <p class="inbox__from"><b>Skilqu</b><span>baru saja</span></p>
+                <p class="inbox__subj">Starter Kit interview magang kamu sudah siap</p>
+                <p class="inbox__prev">Halo! Mulai dari videonya dulu, lalu buka cheat sheet saat latihan menyusun jawaban.</p>
+                <div class="inbox__files">
+                  <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3z"/></svg>Video Teknik STAR · 15 menit</span>
+                  <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>Cheat sheet 10 pertanyaan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tersambung ke Google Form "Skilqu Free Starter Kit" (forms.gle/J4PEFT8KvMqSfZ52A).
+             Dikirim lewat iframe tersembunyi supaya pengunjung tetap di halaman; name="entry.xxx" = kode kolom Google Form.
+             Kalau kolom Google Form diubah, kode entry-nya ikut berubah dan harus diperbarui di sini. -->
+        <iframe name="gform-sink" id="gform-sink" title="Pengiriman form" hidden></iframe>
+        <form class="form card closing-form span-5 start-8" action="https://docs.google.com/forms/d/e/1FAIpQLSe7CeWHvjwEFEhvGUG9dQ1lMHRWspZad0MGytOTOnNPJfyJSw/formResponse" method="post" target="gform-sink" data-gform data-sent="Starter Kit-mu sedang dikirim. Cek email dalam 5 menit, termasuk folder Promosi." data-fix="{n} kolom perlu diperbaiki." data-sending="Mengirim…" novalidate>
+          <div class="field"><label for="f-name">Nama</label>
+            <input id="f-name" name="entry.85443101" type="text" autocomplete="name" required aria-describedby="f-name-err">
+            <p class="field__error" id="f-name-err" hidden>Tulis nama kamu.</p></div>
+          <div class="field"><label for="f-email">Email aktif</label>
+            <input id="f-email" name="entry.1485412828" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-email-err">
+            <p class="field__error" id="f-email-err" hidden>Tulis alamat email dengan @, misalnya nama@kampus.ac.id.</p></div>
+          <div class="field"><label for="f-track">Fokus track</label>
+            <select id="f-track" name="entry.2025803069">
+              <option value="Interview &amp; Case Study" selected>Interview &amp; Case Study</option>
+              <option value="Lainnya">Lainnya / belum yakin</option>
+            </select></div>
+          <div class="btn-row"><button class="btn btn--primary" type="submit">Kirim ke Email Saya</button></div>
+          <p class="reassure-line">100% gratis · Langsung dikirim ke email · Tanpa kartu kredit</p>
+          <p class="form__status" role="status" data-form-status></p>
+          <div class="stamp stamp--sent" aria-hidden="true" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Terkirim</div>
+        </form>
+      </div>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-6 stack-4">
+          <a class="nav__logo" href="#top"><span class="mark mark--initial" aria-hidden="true">S</span>skilqu</a>
+          <p class="footer__lede">Belajar skill karier yang praktis untuk mahasiswa dan fresh graduate.</p>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <span>&copy; 2026 Skilqu &nbsp; <a href="privacy.html">Kebijakan Privasi</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Aksi cepat">
+  <a class="btn btn--primary" href="#daftar">Ambil Cheat Sheet Gratis</a>
+</nav>
+
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+<script>
+/* page behaviour the kit does not cover: the hero email carries over to the final form, the hero's sheet loop,
+   the STAR isolate, and the check card loop. Everything rests under reduced motion and reads whole without script. */
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var hf = document.querySelector('[data-hero-form]');
+  if (hf) hf.querySelector('input').addEventListener('input', function () {
+    if (this.checkValidity()) { document.getElementById('h-email-err').hidden = true; this.removeAttribute('aria-invalid'); }
+  });
+  if (hf) hf.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var hin = hf.querySelector('input'), herr = document.getElementById('h-email-err');
+    // an email typed wrong is caught here, not 8,000px further down; an empty one still goes on to the form
+    if (hin.value.trim() && !hin.checkValidity()) {
+      herr.hidden = false; hin.setAttribute('aria-invalid', 'true'); hin.focus();
+      return;
+    }
+    herr.hidden = true; hin.removeAttribute('aria-invalid');
+    var v = hin.value.trim();
+    var target = document.getElementById('f-email');
+    if (v && target) target.value = v;
+    document.getElementById('daftar').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
+    setTimeout(function () { document.getElementById('f-name').focus({ preventScroll: true }); }, reduce ? 0 : 500);
+  });
+
+  var closing = document.getElementById('daftar'), bar = document.querySelector('body > nav.actionbar');
+  if (closing && bar && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) {
+      var on = es[0].isIntersecting;
+      document.documentElement.classList.toggle('at-form', on);
+      if (on) bar.inert = true; else bar.inert = bar.dataset.bar !== 'shown';
+    }, { threshold: 0.15 }).observe(closing.querySelector('form') || closing);
+  }
+
+  /* final form -> Google Form: the browser posts it into the hidden iframe (no page change); when that iframe loads
+     after a valid send, the form shows its success line and clears. The kit's own checks run first and block bad input. */
+  var gf = document.querySelector('[data-gform]'), sink = document.getElementById('gform-sink');
+  if (gf && sink) {
+    var gStatus = gf.querySelector('[data-form-status]'), gBtn = gf.querySelector('[type="submit"]'), pending = false, gTimer;
+    var gSay = function (t) { if (gStatus) gStatus.textContent = t; };
+    gf.addEventListener('submit', function () {
+      if (!gf.checkValidity()) return;
+      pending = true;
+      setTimeout(function () { if (pending) gSay(gf.dataset.sending); }, 0);   // after the kit's own handler clears the line
+      if (gBtn) { gBtn.disabled = true; gBtn.setAttribute('aria-busy', 'true'); }
+      clearTimeout(gTimer);
+      gTimer = setTimeout(function () {
+        if (!pending) return;
+        pending = false;
+        if (gBtn) { gBtn.disabled = false; gBtn.removeAttribute('aria-busy'); }
+        gSay('Belum terkirim: koneksi bermasalah. Isianmu masih ada, coba kirim lagi.');
+      }, 15000);
+    });
+    sink.addEventListener('load', function () {
+      if (!pending) return;
+      pending = false; clearTimeout(gTimer);
+      if (gBtn) { gBtn.disabled = false; gBtn.removeAttribute('aria-busy'); }
+      gf.reset();
+      gSay(gf.dataset.sent);
+      var sentStamp = gf.querySelector('.stamp--sent');
+      if (sentStamp) { sentStamp.hidden = true; void sentStamp.offsetWidth; sentStamp.hidden = false; }
+    });
+  }
+
+  document.querySelectorAll('[data-isolate]').forEach(function (box) {
+    box.querySelectorAll('.star').forEach(function (row) {
+      row.addEventListener('click', function () {
+        var on = row.classList.contains('is-picked');
+        box.querySelectorAll('.star').forEach(function (r) { r.classList.remove('is-picked'); r.setAttribute('aria-pressed', 'false'); });
+        box.classList.toggle('is-isolating', !on);
+        if (!on) { row.classList.add('is-picked'); row.setAttribute('aria-pressed', 'true'); }
+      });
+    });
+  });
+
+  var track = document.querySelector('[data-vid-track]');
+  if (track) {
+    var prev = document.querySelector('[data-vid-prev]'), next = document.querySelector('[data-vid-next]');
+    var stepW = function () { var c = track.querySelector('.vid'); return c ? c.getBoundingClientRect().width + 20 : 300; };
+    var syncVid = function () {
+      prev.setAttribute('aria-disabled', String(track.scrollLeft <= 4));
+      next.setAttribute('aria-disabled', String(track.scrollLeft + track.clientWidth >= track.scrollWidth - 4));
+    };
+    var go = function (dir) {
+      var from = track.scrollLeft, d = dir * stepW();
+      track.scrollBy({ left: d, behavior: reduce ? 'auto' : 'smooth' });
+      // a browser that ignores smooth scrolling still moves: jump if nothing happened
+      setTimeout(function () { if (Math.abs(track.scrollLeft - from) < 2) track.scrollLeft = from + d; syncVid(); }, 350);
+      setTimeout(syncVid, 800);
+    };
+    prev.addEventListener('click', function () { go(-1); });
+    next.addEventListener('click', function () { go(1); });
+    track.addEventListener('scroll', syncVid, { passive: true });
+    window.addEventListener('resize', syncVid);
+    syncVid();
+  }
+
+  if (reduce) return;
+
+  /* motion set 2: each section rises in once as a whole (never piece by piece), the table's Skilqu ticks pop,
+     and every amber button shines once the first time it is fully on screen. The hero is left out: it opens still. */
+  if ('IntersectionObserver' in window) {
+    document.documentElement.classList.add('rv');
+    var rvio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-in'); rvio.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
+    document.querySelectorAll('main > section.section:not(.statement) > .wrap, footer.closing > .wrap, .cmp-wrap').forEach(function (el) { rvio.observe(el); });
+    var shio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-shine'); shio.unobserve(e.target); } });
+    }, { threshold: 1 });
+    document.querySelectorAll('.btn--primary').forEach(function (b) { shio.observe(b); });
+  }
+
+  /* hero sheet loop removed on request (9 Nov): the card shows filled and stamped from the start */
+  var stage = null;
+  if (stage) {
+    var pills = document.querySelectorAll('.hero .flow li');
+    var rows = stage.querySelectorAll('.star');
+    var stamp = stage.querySelector('.stamp');
+    rows.forEach(function (r) { r.classList.add('is-filled'); }); stamp.classList.add('is-on'); if (pills[2]) pills[2].classList.add('is-on');
+    document.querySelector('.hero').classList.add('loop-on');
+    var step = 6, rounds = 0, hover = false;
+    stage.addEventListener('mouseenter', function () { hover = true; });
+    stage.addEventListener('mouseleave', function () { hover = false; });
+    function tick() {
+      if (hover) return;
+      var s = step % 7;
+      rows.forEach(function (r, i) { r.classList.toggle('is-filled', i < s); });
+      stamp.classList.toggle('is-on', s >= 5);
+      pills.forEach(function (p, i) { p.classList.toggle('is-on', i === (s < 2 ? 0 : s < 5 ? 1 : 2)); });
+      step++;
+      if (s === 6 && ++rounds >= 3) { clearInterval(timer); rows.forEach(function (r) { r.classList.add('is-filled'); }); stamp.classList.add('is-on'); }
+    }
+    var timer = setInterval(tick, 900);
+  }
+
+  var check = document.querySelector('[data-check-loop]');
+  if (check && 'IntersectionObserver' in window) {
+    var items = check.querySelectorAll('li'), count = check.querySelector('[data-check-count]'), bar = check.querySelector('.check__bar');
+    var played = false;
+    new IntersectionObserver(function (es) {
+      if (played || !es[0].isIntersecting) return;
+      played = true;
+      items.forEach(function (li) { li.classList.remove('is-done'); });
+      check.style.setProperty('--done', 0); count.textContent = '0/4';
+      items.forEach(function (li, i) {
+        setTimeout(function () { li.classList.add('is-done'); check.style.setProperty('--done', i + 1); count.textContent = (i + 1) + '/4'; }, 400 + i * 450);
+      });
+    }, { threshold: .6 }).observe(check);
+  }
+})();
+</script>
+</body>
+</html>

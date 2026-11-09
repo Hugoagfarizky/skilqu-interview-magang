@@ -1,0 +1,12 @@
+# paket zip untuk kelompok (salinan dari file yang sama)
+Kirim ke Kelompok/
+
+# file kerja tools desain dan editor
+.claude/
+.impeccable/
+.taste-skill/
+.netlify/
+
+# sistem
+Thumbs.db
+.DS_Store
