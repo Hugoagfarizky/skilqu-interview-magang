@@ -4,6 +4,12 @@ Landing page *mobile-first* untuk **Skilqu Free Starter Kit**, dibuat untuk tuga
 
 **Live:** https://skilqu-interview-magang.netlify.app
 
+> [!IMPORTANT]
+> **Ini hanya tugas kuliah, bukan produk atau layanan sungguhan.**
+> Skilqu adalah studi kasus fiktif dari modul mata kuliah. Tidak ada perusahaan, kursus, video, cheat sheet, atau paket Skilqu Pass yang benar-benar dijual.
+> Angka di halaman (misalnya 100+ mahasiswa per bulan dan harga Rp49.000/bulan) berasal dari data *business case* modul, bukan data nyata.
+> Form di halaman hanya dipakai untuk usability testing tugas; tidak ada materi yang dikirim ke email. Mohon jangan mengisi data pribadi yang sensitif.
+
 ![Tampilan hero landing page Skilqu](share.jpg)
 
 ## Tentang proyek
