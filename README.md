@@ -8,7 +8,7 @@ Landing page *mobile-first* untuk **Skilqu Free Starter Kit**, dibuat untuk tuga
 > **Ini hanya tugas kuliah, bukan produk atau layanan sungguhan.**
 > Skilqu adalah studi kasus fiktif dari modul mata kuliah. Tidak ada perusahaan, kursus, video, cheat sheet, atau paket Skilqu Pass yang benar-benar dijual.
 > Angka di halaman (misalnya 100+ mahasiswa per bulan dan harga Rp49.000/bulan) berasal dari data *business case* modul, bukan data nyata.
-> Form di halaman hanya dipakai untuk usability testing tugas; tidak ada materi yang dikirim ke email. Mohon jangan mengisi data pribadi yang sensitif.
+> Pendaftaran (lewat Lynk.id) hanya dipakai untuk pengujian tugas. Mohon jangan mengisi data pribadi yang sensitif.
 
 ![Tampilan hero landing page Skilqu](share.jpg)
 
@@ -20,18 +20,17 @@ Landing page *mobile-first* untuk **Skilqu Free Starter Kit**, dibuat untuk tuga
 
 ## Struktur halaman (5-Section Mobile Framework)
 
-1. **Hero:** H1 dari riset SEO Modul 1, form email langsung di hero, dan kartu cheat sheet STAR sebagai mockup produk.
+1. **Hero:** H1 dari riset SEO Modul 1, tombol CTA langsung di hero, dan kartu cheat sheet STAR sebagai mockup produk.
 2. **Problem & Agitation:** 3 momen yang bikin interview gagal, ditutup kalimat yang menyala kata demi kata saat di-scroll.
 3. **Solution & Inside Preview:** perbandingan jawaban biasa vs Teknik STAR (bisa diklik per bagian), isi Starter Kit, dan tabel YouTube vs Bootcamp vs Skilqu.
 4. **Trust & FAQ:** cuplikan cheat sheet yang diburamkan, info transparan Skilqu Pass, dan 5 FAQ.
-5. **Final CTA & Form:** Nama, Email, dan Fokus Track, tersambung ke Google Form. Ditambah bonus video tips interview dari YouTube sebelum form.
+5. **Final CTA:** 3 langkah cara ambil dan tombol ke produk Rp0 di Lynk.id (sejak Modul 3; sebelumnya form Google Form). Ditambah bonus video tips interview dari YouTube sebelumnya.
 
 ## Fitur
 
 - Satu kolom di HP, H1 31px, teks isi 16–18px, dan target sentuh minimal 44px.
-- Tombol CTA amber `#F59E0B` terlihat di layar pertama dan diulang di bawah. Ada tombol sticky di HP yang menyingkir saat form terlihat.
-- Email dari hero ikut terisi otomatis di form akhir.
-- Form dikirim ke Google Form lewat iframe tersembunyi, jadi pengunjung tidak pindah halaman. Validasi dan pesannya berbahasa Indonesia.
+- Tombol CTA amber `#F59E0B` terlihat di layar pertama dan diulang di bawah. Ada tombol sticky di HP yang menyingkir saat bagian akhir terlihat.
+- Semua tombol "Ambil Gratis" membuka produk Free Starter Kit Rp0 di Lynk.id. Parameter `utm_*` dari link s.id (Hook A/B, Modul 3) ikut diteruskan ke link Lynk.id.
 - Motion halus: bagian muncul saat di-scroll, kartu terangkat saat disorot, centang tabel, kilau tombol, serta stempel "Siap interview" dan "Terkirim". Semua motion berhenti kalau pengguna memakai mode "kurangi gerakan".
 - SEO on-page: title tag, meta description, canonical, dan Open Graph untuk pratinjau link.
 
@@ -39,7 +38,7 @@ Landing page *mobile-first* untuk **Skilqu Free Starter Kit**, dibuat untuk tuga
 
 - HTML, CSS, dan sedikit JavaScript, tanpa framework dan tanpa build step.
 - Font: Plus Jakarta Sans (Google Fonts). Ikon: SVG garis.
-- Hosting: Netlify. Data pendaftar: Google Forms + Google Sheets.
+- Hosting: Netlify. Data pendaftar: Lynk.id.
 - Sistem tata letak dan motion memakai kit dari [taste-skill](https://github.com/Leonxlnx/taste-skill) (lisensi MIT, lihat `assets/LICENSE-taste-skill.txt`).
 
 ## Struktur file
