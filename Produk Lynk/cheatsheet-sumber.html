@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Skilqu – Cheat Sheet Interview Magang</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  :root { --bg:#f3f9ff; --ink:#0f2a4a; --muted:#47607e; --blue:#1d5bd0; --amber:#f59e0b; --line:#d6e3f3; --red:#c2410c; --green:#15803d; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: var(--ink); font-size: 10.5pt; line-height: 1.45; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { width: 210mm; height: 297mm; padding: 16mm 16mm 14mm; position: relative; page-break-after: always; background: #fff; overflow: hidden; }
+  .page:last-child { page-break-after: auto; }
+  .foot { position: absolute; left: 16mm; right: 16mm; bottom: 9mm; display: flex; justify-content: space-between; font-size: 8pt; color: var(--muted); border-top: 1px solid var(--line); padding-top: 3mm; }
+  .brand { font-weight: 800; letter-spacing: -0.02em; }
+  .brand b { color: var(--blue); }
+  .tag { display: inline-block; background: var(--amber); color: #1f1400; font-weight: 700; font-size: 8.5pt; padding: 1.2mm 3mm; border-radius: 99px; }
+  h1 { font-size: 30pt; line-height: 1.08; letter-spacing: -0.03em; font-weight: 800; }
+  h2 { font-size: 15pt; letter-spacing: -0.02em; font-weight: 800; margin-bottom: 3mm; }
+  .hl { color: var(--blue); }
+  .lead { font-size: 11.5pt; color: var(--muted); }
+  /* cover */
+  .cover-top { background: var(--ink); color: #fff; margin: -16mm -16mm 0; padding: 16mm 16mm 12mm; }
+  .cover-top .brand b { color: var(--amber); }
+  .cover-top h1 { margin: 7mm 0 4mm; }
+  .cover-top h1 .hl { color: var(--amber); }
+  .cover-top .lead { color: #a9b8c9; }
+  .how { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; margin: 8mm 0 7mm; }
+  .how div { background: var(--bg); border-radius: 3mm; padding: 4mm; font-size: 9.5pt; }
+  .how b { display: block; color: var(--blue); font-size: 9pt; margin-bottom: 1mm; }
+  .star { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; margin-bottom: 7mm; }
+  .star > div { border: 1.5px solid var(--line); border-radius: 3mm; padding: 4mm 3.5mm; }
+  .star .l { width: 9mm; height: 9mm; border-radius: 2mm; background: var(--blue); color: #fff; font-weight: 800; font-size: 13pt; display: grid; place-items: center; margin-bottom: 2.5mm; }
+  .star b { display: block; font-size: 10.5pt; }
+  .star span { font-size: 9pt; color: var(--muted); }
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+  .compare div { border-radius: 3mm; padding: 4.5mm; font-size: 9.5pt; }
+  .bad { background: #fff4ed; border-left: 4px solid var(--red); }
+  .good { background: #effbf3; border-left: 4px solid var(--green); }
+  .compare b { display: block; margin-bottom: 1.5mm; font-size: 9pt; }
+  .bad b { color: var(--red); } .good b { color: var(--green); }
+  .rule { margin-top: 5mm; font-size: 9.5pt; color: var(--muted); }
+  /* questions */
+  .qhead { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5mm; }
+  .q { border: 1.5px solid var(--line); border-radius: 3mm; padding: 4mm 4.5mm; margin-bottom: 3.6mm; break-inside: avoid; }
+  .q-top { display: flex; gap: 3mm; align-items: baseline; margin-bottom: 1.5mm; }
+  .num { flex: none; width: 7.5mm; height: 7.5mm; border-radius: 99px; background: var(--ink); color: #fff; font-weight: 800; font-size: 9pt; display: grid; place-items: center; transform: translateY(1.5mm); }
+  .q h3 { font-size: 11.5pt; font-weight: 800; letter-spacing: -0.01em; }
+  .trap { font-size: 7.5pt; font-weight: 700; color: var(--red); background: #fff4ed; border-radius: 99px; padding: 0.6mm 2.2mm; margin-left: 2mm; vertical-align: 1px; }
+  .q .why { font-size: 8.8pt; color: var(--muted); margin: 0 0 2mm 10.5mm; }
+  .q dl { display: grid; grid-template-columns: 22mm 1fr; gap: 1.2mm 3mm; margin-left: 10.5mm; font-size: 9.2pt; }
+  .q dt { font-weight: 700; color: var(--blue); }
+  .q dt.no { color: var(--red); }
+  .q dd i { color: var(--ink); }
+  /* last page */
+  .check { list-style: none; display: grid; gap: 2.5mm; margin-bottom: 8mm; }
+  .check li { display: grid; grid-template-columns: 7mm 1fr; align-items: start; font-size: 10pt; }
+  .check li::before { content: ""; width: 4.5mm; height: 4.5mm; border: 1.6px solid var(--ink); border-radius: 1mm; margin-top: 0.6mm; }
+  .box { background: var(--bg); border-radius: 3mm; padding: 5mm; margin-bottom: 5mm; }
+  .box h3 { font-size: 11pt; margin-bottom: 2mm; }
+  .box p, .box li { font-size: 9.5pt; }
+  .box ul { padding-left: 4.5mm; display: grid; gap: 1mm; }
+  .practice { border: 1.5px dashed var(--line); border-radius: 3mm; padding: 5mm; }
+  .practice h3 { font-size: 11pt; margin-bottom: 3mm; }
+  .lines div { display: grid; grid-template-columns: 8mm 1fr; align-items: end; height: 11mm; border-bottom: 1px solid var(--line); font-weight: 800; color: var(--blue); }
+  .disclaimer { margin-top: 5mm; font-size: 8pt; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<section class="page">
+  <div class="cover-top">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div class="brand">Skil<b>qu</b></div><span class="tag">Free Starter Kit · Rp0</span>
+    </div>
+    <h1>Cheat Sheet<br><span class="hl">Interview Magang</span></h1>
+    <p class="lead">10 pertanyaan yang paling sering keluar, termasuk 3 pertanyaan jebakan, lengkap dengan kerangka jawabannya.</p>
+  </div>
+
+  <div class="how">
+    <div><b>1 · Baca kerangkanya</b>Tiap pertanyaan punya alasan HRD bertanya, kerangka jawaban, dan hal yang harus dihindari.</div>
+    <div><b>2 · Isi dengan ceritamu</b>Pakai pengalaman kuliah, organisasi, lomba, atau kerja part-time. Tidak harus pengalaman kerja.</div>
+    <div><b>3 · Latih dengan suara</b>Ucapkan jawabanmu keras-keras, 1–2 menit per pertanyaan. Rekam pakai HP kalau bisa.</div>
+  </div>
+
+  <h2>Teknik <span class="hl">STAR</span>: kerangka untuk semua cerita</h2>
+  <div class="star">
+    <div><div class="l">S</div><b>Situasi</b><span>Kapan dan di mana? Beri konteks dalam 1 kalimat.</span></div>
+    <div><div class="l">T</div><b>Tugas</b><span>Apa tanggung jawabmu saat itu?</span></div>
+    <div><div class="l">A</div><b>Aksi</b><span>Apa yang <u>kamu</u> lakukan? Ini bagian terpanjang.</span></div>
+    <div><div class="l">R</div><b>Hasil</b><span>Apa hasilnya? Pakai angka kalau ada.</span></div>
+  </div>
+
+  <h2>Bedanya kelihatan</h2>
+  <div class="compare">
+    <div class="bad"><b>✕ Jawaban biasa</b>“Saya pernah ikut kepanitiaan dan belajar kerja sama tim.”<br><br><span style="color:var(--muted)">Situasinya apa? Tugasmu apa? Kamu ngapain? Hasilnya? Tidak ada yang terjawab.</span></div>
+    <div class="good"><b>✓ Jawaban STAR</b>“Saat jadi koordinator acara, dua divisi berebut anggaran <i>(S)</i>. Aku harus memastikan acara tetap sesuai jadwal <i>(T)</i>. Aku ajak rapat dan membagi ulang anggaran sesuai prioritas <i>(A)</i>. Acara berjalan tepat waktu dan dana masih tersisa 10% <i>(R)</i>.”</div>
+  </div>
+  <p class="rule">Aturan praktis: <b>S + T singkat, A paling panjang, R pakai angka.</b> Satu cerita STAR yang bagus bisa dipakai untuk beberapa pertanyaan sekaligus.</p>
+
+  <div class="foot"><span class="brand">Skil<b>qu</b></span><span>Cheat Sheet Interview Magang · 1/4</span></div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+  <div class="qhead"><h2>Pertanyaan 1–5</h2><span class="tag">Kerangka jawaban</span></div>
+
+  <div class="q">
+    <div class="q-top"><span class="num">1</span><h3>“Ceritakan tentang dirimu.”</h3></div>
+    <p class="why">HRD ingin tahu alasan memilihmu, bukan biodata lengkap.</p>
+    <dl>
+      <dt>Kerangka</dt><dd><b>Sekarang → Dulu → Nanti</b> (±60 detik): status kuliahmu sekarang, 1–2 pengalaman yang relevan, lalu kenapa kamu melamar posisi ini.</dd>
+      <dt>Pembuka</dt><dd><i>“Saya mahasiswa semester 5 jurusan …, dan selama kuliah saya paling banyak terlibat di …”</i></dd>
+      <dt class="no">Hindari</dt><dd>Cerita hobi, asal daerah, atau mengulang isi CV baris per baris.</dd>
+    </dl>
+  </div>
+
+  <div class="q">
+    <div class="q-top"><span class="num">2</span><h3>“Kenapa ingin magang di perusahaan ini?”</h3></div>
+    <p class="why">Mengecek apakah kamu riset dulu atau melamar ke semua tempat.</p>
+    <dl>
+      <dt>Kerangka</dt><dd>1 hal spesifik tentang perusahaan (produk, proyek, nilai) + kecocokannya dengan minatmu + apa yang ingin kamu pelajari dan kontribusikan.</dd>
+      <dt>Pembuka</dt><dd><i>“Saya tertarik sejak melihat proyek … karena berhubungan dengan …”</i></dd>
+      <dt class="no">Hindari</dt><dd>“Perusahaannya besar dan terkenal” atau “untuk memenuhi syarat SKS.”</dd>
+    </dl>
+  </div>
+
+  <div class="q">
+    <div class="q-top"><span class="num">3</span><h3>“Kenapa kami harus memilihmu?”</h3></div>
+    <p class="why">Kesempatan menyimpulkan nilai jualmu dalam 30 detik.</p>
+    <dl>
+      <dt>Kerangka</dt><dd>2 kemampuan yang dicari di lowongan + 1 bukti singkat untuk masing-masing + semangat belajar.</dd>
+      <dt>Pembuka</dt><dd><i>“Lowongan ini butuh … dan …. Saya sudah pernah melakukan keduanya saat …”</i></dd>
+      <dt class="no">Hindari</dt><dd>Klaim tanpa bukti (“saya pekerja keras”) atau membandingkan diri dengan kandidat lain.</dd>
+    </dl>
+  </div>
+
+  <div class="q">
+    <div class="q-top"><span class="num">4</span><h3>“Ceritakan pengalaman organisasimu.”</h3></div>
+    <p class="why">Menilai cara kamu bekerja dalam tim dan mengambil peran.</p>
+    <dl>
+      <dt>Kerangka</dt><dd>Pilih <b>1 momen</b>, ceritakan dengan STAR. Fokus pada aksi yang kamu ambil, bukan aksi tim secara umum.</dd>
+      <dt>Contoh</dt><dd>Lihat contoh koordinator acara di halaman 1.</dd>
+      <dt class="no">Hindari</dt><dd>Mendaftar semua organisasi dan jabatan tanpa satu cerita pun.</dd>
+    </dl>
+  </div>
+
+  <div class="q">
+    <div class="q-top"><span class="num">5</span><h3>“Apa kelebihanmu?”</h3></div>
+    <p class="why">Mencari kecocokan antara kekuatanmu dan kebutuhan posisi.</p>
+    <dl>
+      <dt>Kerangka</dt><dd>1 kelebihan yang relevan dengan posisi + bukti STAR singkat (2–3 kalimat) + manfaatnya untuk tim.</dd>
+      <dt>Pembuka</dt><dd><i>“Kelebihan saya adalah …. Contohnya waktu …”</i></dd>
+      <dt class="no">Hindari</dt><dd>Menyebut 5 kelebihan sekaligus tanpa bukti apa pun.</dd>
+    </dl>
+  </div>
+
+  <div class="foot"><span class="brand">Skil<b>qu</b></span><span>Cheat Sheet Interview Magang · 2/4</span></div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page">
+  <div class="qhead"><h2>Pertanyaan 6–10</h2><span class="tag">Termasuk 3 jebakan</span></div>
+
+  <div class="q">
+    <div class="q-top"><span class="num">6</span><h3>“Apa kekuranganmu?”<span class="trap">JEBAKAN</span></h3></div>
+    <p class="why">Menguji kejujuran dan kesadaran diri, bukan mencari alasan menolakmu.</p>
+    <dl>
+      <dt>Kerangka</dt><dd>Kekurangan nyata yang <b>bukan inti posisi</b> + langkah konkret yang sedang kamu lakukan untuk memperbaikinya.</dd>
+      <dt>Pembuka</dt><dd><i>“Saya dulu sulit menolak permintaan tambahan, jadi sekarang saya …”</i></dd>
+      <dt class="no">Hindari</dt><dd>“Saya terlalu perfeksionis” (klise) atau kekurangan yang fatal untuk posisinya.</dd>
+    </dl>
+  </div>
+
+  <div class="q">
+    <div class="q-top"><span class="num">7</span><h3>“Ceritakan saat kamu gagal.”</h3></div>
+    <p class="why">Melihat caramu bangkit dan belajar dari kesalahan.</p>
+    <dl>
+      <dt>Kerangka</dt><dd>STAR + <b>L (Lesson)</b>: apa yang kamu pelajari dan bagaimana kamu menerapkannya setelah itu.</dd>
+      <dt>Pembuka</dt><dd><i>“Waktu lomba …, tim kami tidak lolos karena …. Setelah itu saya …”</i></dd>
+      <dt class="no">Hindari</dt><dd>Bilang tidak pernah gagal, atau menyalahkan orang lain.</dd>
+    </dl>
+  </div>
+
+  <div class="q">
+    <div class="q-top"><span class="num">8</span><h3>“Pernah konflik dengan anggota tim?”<span class="trap">JEBAKAN</span></h3></div>
+    <p class="why">Menilai kedewasaan dan cara berkomunikasi saat ada masalah.</p>
+    <dl>
+      <dt>Kerangka</dt><dd>STAR yang fokus pada <b>solusi</b>: bagaimana kamu mengajak bicara, mencari jalan tengah, dan hasilnya untuk tim.</dd>
+      <dt>Pembuka</dt><dd><i>“Pernah, saat … ada perbedaan pendapat soal …. Saya ajak …”</i></dd>
+      <dt class="no">Hindari</dt><dd>Menjelekkan teman tim atau bilang tidak pernah berbeda pendapat.</dd>
+    </dl>
+  </div>
+
+  <div class="q">
+    <div class="q-top"><span class="num">9</span><h3>“Di mana kamu 5 tahun lagi?”</h3></div>
+    <p class="why">Mengecek apakah magang ini nyambung dengan arah kariermu.</p>
+    <dl>
+      <dt>Kerangka</dt><dd>Bidang yang ingin kamu tekuni + skill yang ingin kamu kuasai + peran magang ini sebagai langkah pertamanya.</dd>
+      <dt>Pembuka</dt><dd><i>“Saya ingin berkembang di bidang …, dan magang ini langkah awal untuk …”</i></dd>
+      <dt class="no">Hindari</dt><dd>“Belum tahu” atau rencana yang tidak berhubungan sama sekali dengan posisi.</dd>
+    </dl>
+  </div>
+
+  <div class="q">
+    <div class="q-top"><span class="num">10</span><h3>“Ada pertanyaan untuk kami?”<span class="trap">JEBAKAN</span></h3></div>
+    <p class="why">Menjawab “tidak ada” memberi kesan kamu kurang tertarik.</p>
+    <dl>
+      <dt>Kerangka</dt><dd>Siapkan 2 pertanyaan tentang pekerjaannya, bukan soal gaji atau libur di interview pertama.</dd>
+      <dt>Contoh</dt><dd><i>“Seperti apa tugas harian anak magang di tim ini?”</i> · <i>“Apa yang membuat anak magang dinilai berhasil di sini?”</i></dd>
+      <dt class="no">Hindari</dt><dd>Menanyakan hal yang jawabannya sudah ada di lowongan atau website.</dd>
+    </dl>
+  </div>
+
+  <div class="foot"><span class="brand">Skil<b>qu</b></span><span>Cheat Sheet Interview Magang · 3/4</span></div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page">
+  <h2>Checklist H-1 interview</h2>
+  <ul class="check">
+    <li>Baca ulang lowongannya dan tandai 2–3 kemampuan yang paling dicari.</li>
+    <li>Siapkan 3 cerita STAR: organisasi/tim, masalah atau kegagalan, dan pencapaian.</li>
+    <li>Latih jawaban pertanyaan 1, 2, dan 3 sampai lancar tanpa membaca.</li>
+    <li>Siapkan 2 pertanyaan untuk pewawancara (lihat pertanyaan 10).</li>
+    <li>Interview online: cek kamera, mikrofon, koneksi, dan latar belakang 15 menit sebelumnya.</li>
+    <li>Interview offline: cek rute dan datang 15 menit lebih awal.</li>
+    <li>Simpan CV dan portofolio dalam PDF, siap dikirim kalau diminta.</li>
+  </ul>
+
+  <div class="box">
+    <h3>Video yang bisa kamu tonton</h3>
+    <ul>
+      <li>Tips Interview dengan Metode STAR — Maukerja Indonesia · youtube.com/watch?v=JZBjCA5Z19c</li>
+      <li>Empat Pertanyaan Interview Magang yang Pasti Ditanyakan — Samuel &amp; Claudya · youtube.com/watch?v=sUFCWuE9nA4</li>
+      <li>Tips Jawab “Ceritakan Tentang Dirimu” — Jobstreet by SEEK (Indonesia) · youtube.com/watch?v=9WsRvH1BSJQ</li>
+    </ul>
+  </div>
+
+  <div class="practice">
+    <h3>Latihan: tulis 1 cerita STAR-mu</h3>
+    <div class="lines">
+      <div>S</div><div>T</div><div>A</div><div></div><div>R</div>
+    </div>
+  </div>
+
+  <p class="disclaimer">Dokumen ini dibuat untuk tugas kuliah Pemasaran Digital (Modul 3) sebagai isi produk contoh “Free Starter Kit” Skilqu. Skilqu bukan layanan sungguhan. Video di atas milik kreatornya masing-masing dan hanya dirujuk lewat link.</p>
+
+  <div class="foot"><span class="brand">Skil<b>qu</b></span><span>Cheat Sheet Interview Magang · 4/4</span></div>
+</section>
+
+</body>
+</html>
