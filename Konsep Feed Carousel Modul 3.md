@@ -22,7 +22,7 @@ Track C (Interview). 1 carousel, 7 slide, ukuran 1080×1350 (4:5). Dua versi han
 
 | Versi | Tayang | Diamati sampai | Link di postingan |
 |---|---|---|---|
-| A | Rabu, 18 Nov 2026, [19.00] WIB | Jumat, 20 Nov, [19.00] | s.id/skilqu-kel10-a |
+| A | Rabu, 18 Nov 2026, [19.00] WIB | Jumat, 20 Nov, [19.00] | s.id/skillqu-sukses-Interview |
 | B | Kamis, 19 Nov 2026, [19.00] WIB | Sabtu, 21 Nov, [19.00] | s.id/skilqu-kel10-b |
 
 Link s.id-nya diarahkan ke:
@@ -148,7 +148,7 @@ PNG alternatif ada di `Modul 3 Carousel/Alternatif Cover/`. Kalau cover yang dip
 
 ### Slide 7: CTA
 - Judul: **"Ambil gratis (Rp0) sekarang"**
-- Kotak amber besar: **"Ketik s.id/skilqu-kel10-a"** (di versi B: **-b**)
+- Kotak amber besar: **"Ketik s.id/skillqu-sukses-Interview"** (di versi B: **s.id/skilqu-kel10-b**)
 - Di bawahnya: "Video 15 menit + cheat sheet 10 pertanyaan interview"
 - Baris kecil: "Link juga ada di caption · 100% gratis · Tanpa kartu kredit"
 
@@ -167,7 +167,7 @@ PNG alternatif ada di `Modul 3 Carousel/Alternatif Cover/`. Kalau cover yang dip
 >
 > Lebih ringkas dari tutorial YouTube 2 jam, dan langsung bisa dipakai latihan.
 >
-> Ambil gratis (Rp0): s.id/skilqu-kel10-a
+> Ambil gratis (Rp0): s.id/skillqu-sukses-Interview
 >
 > #interviewmagang #tipsinterview #teknikSTAR #pertanyaaninterview #magang #freshgraduate #carikerja #persiapaninterview
 
