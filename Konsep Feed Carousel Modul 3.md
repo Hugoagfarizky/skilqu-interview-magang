@@ -23,7 +23,7 @@ Track C (Interview). 1 carousel, 7 slide, ukuran 1080×1350 (4:5). Dua versi han
 | Versi | Tayang | Diamati sampai | Link di postingan |
 |---|---|---|---|
 | A | Rabu, 18 Nov 2026, [19.00] WIB | Jumat, 20 Nov, [19.00] | s.id/skillqu-sukses-Interview |
-| B | Kamis, 19 Nov 2026, [19.00] WIB | Sabtu, 21 Nov, [19.00] | s.id/skilqu-kel10-b |
+| B | Kamis, 19 Nov 2026, [19.00] WIB | Sabtu, 21 Nov, [19.00] | s.id/skillqu-interview |
 
 Link s.id-nya diarahkan ke:
 - A: `https://skilqu-interview-magang.netlify.app/?utm_source=ig&utm_medium=carousel&utm_content=hook_control_A`
@@ -148,7 +148,7 @@ PNG alternatif ada di `Modul 3 Carousel/Alternatif Cover/`. Kalau cover yang dip
 
 ### Slide 7: CTA
 - Judul: **"Ambil gratis (Rp0) sekarang"**
-- Kotak amber besar: **"Ketik s.id/skillqu-sukses-Interview"** (di versi B: **s.id/skilqu-kel10-b**)
+- Kotak amber besar: **"Ketik s.id/skillqu-sukses-Interview"** (di versi B: **s.id/skillqu-interview**)
 - Di bawahnya: "Video 15 menit + cheat sheet 10 pertanyaan interview"
 - Baris kecil: "Link juga ada di caption · 100% gratis · Tanpa kartu kredit"
 
@@ -171,7 +171,7 @@ PNG alternatif ada di `Modul 3 Carousel/Alternatif Cover/`. Kalau cover yang dip
 >
 > #interviewmagang #tipsinterview #teknikSTAR #pertanyaaninterview #magang #freshgraduate #carikerja #persiapaninterview
 
-Di versi B, link-nya diganti `s.id/skilqu-kel10-b`. Hashtag diambil dari keyword Modul 1 (pertanyaan interview magang, cara menjawab pertanyaan interview, teknik STAR). [Cek ulang dengan hasil riset Modul 1 kelompok.]
+Di versi B, link-nya diganti `s.id/skillqu-interview`. Hashtag diambil dari keyword Modul 1 (pertanyaan interview magang, cara menjawab pertanyaan interview, teknik STAR). [Cek ulang dengan hasil riset Modul 1 kelompok.]
 
 ---
 
