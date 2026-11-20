@@ -1,68 +1,68 @@
-# Skilqu: Landing Page Cheat Sheet Interview Magang
+# Skilqu: Landing Page Cheat Sheet for Internship Interviews
 
-Landing page *mobile-first* untuk **Skilqu Free Starter Kit**, dibuat untuk tugas Mata Kuliah Pemasaran Digital (Modul 2: Landing Page & Usability Testing), Inovasi Digital, Departemen Sistem Informasi, ITS. Skilqu adalah studi kasus dari modul.
+Mobile-first landing page for the **Skilqu Free Starter Kit**, built for the Digital Marketing course (Module 2: Landing Page & Usability Testing), Digital Innovation, Information Systems Department, ITS. Skilqu is a case study from the module.
 
 **Live:** https://skilqu-interview-magang.netlify.app
 
 > [!IMPORTANT]
-> **Ini hanya tugas kuliah, bukan produk atau layanan sungguhan.**
-> Skilqu adalah studi kasus fiktif dari modul mata kuliah. Tidak ada perusahaan, kursus, video, cheat sheet, atau paket Skilqu Pass yang benar-benar dijual.
-> Angka di halaman (misalnya 100+ mahasiswa per bulan dan harga Rp49.000/bulan) berasal dari data *business case* modul, bukan data nyata.
-> Pendaftaran (lewat Lynk.id) hanya dipakai untuk pengujian tugas. Mohon jangan mengisi data pribadi yang sensitif.
+> **This is a university assignment, not a real product or service.**
+> Skilqu is a fictional case study from the course module. No company, course, video, cheat sheet, or Skilqu Pass package is actually sold.
+> The numbers on the page (e.g., 100+ students per month and Rp49,000/month) come from the module's business case data, not real data.
+> Registration (via Lynk.id) is only used for assignment testing. Please do not enter sensitive personal data.
 
-![Tampilan hero landing page Skilqu](share.jpg)
+![Skilqu landing page hero view](share.jpg)
 
-## Tentang proyek
+## About the project
 
-- **Tujuan:** satu tujuan konversi, yaitu pengunjung mendaftar Free Starter Kit (Rp0): video 15 menit Teknik STAR dan cheat sheet 10 pertanyaan interview magang. Paket lanjutan Skilqu Pass (Rp49.000/bulan) dikenalkan setelahnya.
-- **Target:** mahasiswa tingkat akhir dan fresh graduate (persona "Nadya", 21 tahun). 85% membuka dari HP.
-- **KPI:** Landing Conversion Rate = pendaftar ÷ pengunjung × 100%. Baseline 5%, target ≥ 8%.
+- **Goal:** a single conversion goal — visitors register for the Free Starter Kit (Rp0): a 15-minute STAR Technique video and a cheat sheet of 10 internship interview questions. The advanced Skilqu Pass package (Rp49,000/month) is introduced afterwards.
+- **Target:** final-year students and fresh graduates (persona "Nadya", 21 years old). 85% open it from a phone.
+- **KPI:** Landing Conversion Rate = registrants ÷ visitors × 100%. Baseline 5%, target ≥ 8%.
 
-## Struktur halaman (5-Section Mobile Framework)
+## Page structure (5-Section Mobile Framework)
 
-1. **Hero:** H1 dari riset SEO Modul 1, tombol CTA langsung di hero, dan kartu cheat sheet STAR sebagai mockup produk.
-2. **Problem & Agitation:** 3 momen yang bikin interview gagal, ditutup kalimat yang menyala kata demi kata saat di-scroll.
-3. **Solution & Inside Preview:** perbandingan jawaban biasa vs Teknik STAR (bisa diklik per bagian), isi Starter Kit, dan tabel YouTube vs Bootcamp vs Skilqu.
-4. **Trust & FAQ:** cuplikan cheat sheet yang diburamkan, info transparan Skilqu Pass, dan 5 FAQ.
-5. **Final CTA:** 3 langkah cara ambil dan tombol ke produk Rp0 di Lynk.id (sejak Modul 3; sebelumnya form Google Form). Ditambah bonus video tips interview dari YouTube sebelumnya.
+1. **Hero:** H1 from the Module 1 SEO research, CTA button directly in the hero, and the STAR cheat sheet card as a product mockup.
+2. **Problem & Agitation:** 3 moments that make an interview fail, closed with a sentence that lights up word by word on scroll.
+3. **Solution & Inside Preview:** comparison of a plain answer vs. the STAR Technique (clickable per part), Starter Kit contents, and a YouTube vs. Bootcamp vs. Skilqu table.
+4. **Trust & FAQ:** a blurred cheat sheet preview, transparent Skilqu Pass info, and 5 FAQs.
+5. **Final CTA:** 3 steps to claim it and a button to the Rp0 product on Lynk.id (since Module 3; previously a Google Form). Plus a bonus YouTube video with interview tips added earlier.
 
-## Fitur
+## Features
 
-- Satu kolom di HP, H1 31px, teks isi 16–18px, dan target sentuh minimal 44px.
-- Tombol CTA amber `#F59E0B` terlihat di layar pertama dan diulang di bawah. Ada tombol sticky di HP yang menyingkir saat bagian akhir terlihat.
-- Semua tombol "Ambil Gratis" membuka produk Free Starter Kit Rp0 di Lynk.id. Parameter `utm_*` dari link s.id (Hook A/B, Modul 3) ikut diteruskan ke link Lynk.id.
-- Motion halus: bagian muncul saat di-scroll, kartu terangkat saat disorot, centang tabel, kilau tombol, serta stempel "Siap interview" dan "Terkirim". Semua motion berhenti kalau pengguna memakai mode "kurangi gerakan".
-- SEO on-page: title tag, meta description, canonical, dan Open Graph untuk pratinjau link.
+- Single column on mobile, 31px H1, 16–18px body text, and touch targets of at least 44px.
+- Amber CTA button `#F59E0B` visible on the first screen and repeated below. There is a sticky button on mobile that steps aside when the final section is visible.
+- All "Ambil Gratis" buttons open the Free Starter Kit Rp0 product on Lynk.id. The `utm_*` parameters from the s.id link (Hook A/B, Module 3) are forwarded to the Lynk.id link.
+- Smooth motion: sections fade in on scroll, cards lift on hover, table checkmarks, button shimmer, and "Siap interview" / "Terkirim" stamps. All motion stops when the user prefers reduced motion.
+- On-page SEO: title tag, meta description, canonical, and Open Graph for link previews.
 
-## Teknologi
+## Tech stack
 
-- HTML, CSS, dan sedikit JavaScript, tanpa framework dan tanpa build step.
-- Font: Plus Jakarta Sans (Google Fonts). Ikon: SVG garis.
-- Hosting: Netlify. Data pendaftar: Lynk.id.
-- Sistem tata letak dan motion memakai kit dari [taste-skill](https://github.com/Leonxlnx/taste-skill) (lisensi MIT, lihat `assets/LICENSE-taste-skill.txt`).
+- HTML, CSS, and a little JavaScript — no framework and no build step.
+- Font: Plus Jakarta Sans (Google Fonts). Icons: line SVGs.
+- Hosting: Netlify. Registrant data: Lynk.id.
+- Layout and motion system use the kit from [taste-skill](https://github.com/Leonxlnx/taste-skill) (MIT license, see `assets/LICENSE-taste-skill.txt`).
 
-## Struktur file
+## File structure
 
 ```
-index.html        halaman utama
-privacy.html      kebijakan privasi
-favicon.svg       ikon tab
-share.jpg         gambar pratinjau link (Open Graph)
-assets/           CSS dan JS kit yang dipakai halaman
-*.md              dokumen proses: isi halaman, profil produk, sistem desain, rencana desain
+index.html        main page
+privacy.html      privacy policy
+favicon.svg       tab icon
+share.jpg         link preview image (Open Graph)
+assets/           CSS and JS kit used by the page
+*.md              process documents: page content, product profile, design system, design plan
 ```
 
-## Menjalankan di komputer sendiri
+## Running locally
 
-Buka folder ini lewat server lokal, karena beberapa script memakai ES module yang tidak jalan dari `file://`:
+Open this folder through a local server, because some scripts use ES modules that do not run from `file://`:
 
 ```bash
 python -m http.server 8480
 ```
 
-Lalu buka http://localhost:8480.
+Then open http://localhost:8480.
 
-## Catatan
+## Notes
 
-- Video di bagian bonus adalah milik channel YouTube masing-masing dan hanya ditautkan, bukan buatan Skilqu.
-- Cheat sheet di halaman adalah materi demonstrasi untuk tugas kuliah.
+- The video in the bonus section belongs to the respective YouTube channels and is only linked, not created by Skilqu.
+- The cheat sheet on the page is demonstration material for a university assignment.
